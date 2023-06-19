@@ -22,5 +22,21 @@ const adduser = (user)=> {
    })
  }
 
+//  const getDiseaseTime = (userId)=> {
+//    return axiosServ.get('user/disease/time',{
+//        params: {
+//           userId : userId
+//        }
+//     })
+//   }
 
-export default {login,adduser, adddisease,getAllDisease}
+  const getOnlyTime = (userId)=> {
+   return axiosServ.get('user/time',{
+       params: {
+          userId : userId
+       }
+    })
+  }
+
+
+export default {login,adduser, adddisease,getAllDisease,getOnlyTime}
